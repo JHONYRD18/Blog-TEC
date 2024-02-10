@@ -226,6 +226,10 @@ img {
   font-weight: normal;
 }
 
+.widget-curso_label, .widget-curso_info {
+  font-size: 2rem;
+}
+
 @media (max-width: 870px) {
   .contenido-principal {
     grid-template-columns: repeat(1, 1fr);
@@ -251,6 +255,55 @@ img {
   .Sobre-nosotros {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*Cursos*/
+.curso {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--barra);
+}
+
+.curso:last-of-type {
+  border: none;
+}
+
+.curso_label {
+  font-family: var(--Fuente-Heading);
+  font-weight: bold;
+}
+.curso_info {
+  font-weight: normal;
+}
+
+.curso_label, .curso_info {
+  font-size: 2rem;
+}
+
+.curso_descripcion {
+  text-align: justify;
+}
+
+@media (max-width: 1270px) {
+  .curso_label, .curso_info {
+    font-size: 1.6rem;
+  }
+  .curso_descripcion {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .curso {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 0;
+  }
+
+  .curso_label, .curso_info {
+    font-size: 2rem;
   }
 }
 
