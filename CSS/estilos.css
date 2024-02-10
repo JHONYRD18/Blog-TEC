@@ -60,7 +60,7 @@ h4 {
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 /*Utilidades*/
@@ -103,8 +103,6 @@ img {
   }
 }
 
-
-
 /*logo + nav*/
 .barra {
   display: flex;
@@ -145,14 +143,15 @@ img {
   .barra {
     display: block;
   }
+  
   .navegacion {
     display: block;
   }
 
   .navegacion__enlace {
     display: block;
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 1.8rem;
   }
 }
 /*Contenido: parte index*/
@@ -234,6 +233,24 @@ img {
 
   .boton {
     display: block;
+  }
+}
+
+/*Sobre Nosotros*/
+.Sobre-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.Sobre-nosotros_tex{
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  .Sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
