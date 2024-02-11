@@ -127,9 +127,9 @@ img {
   gap: 3rem;
 }
 
-.navegacion__enlace:hover{
+.navegacion__enlace:hover {
   color: var(--barra);
-  transition: .3s;
+  transition: 0.3s;
   font-size: 2.05rem;
   font-weight: bolder;
 }
@@ -143,7 +143,7 @@ img {
   .barra {
     display: block;
   }
-  
+
   .navegacion {
     display: block;
   }
@@ -214,8 +214,8 @@ img {
 }
 
 .widget-curso:last-of-type {
-    margin-bottom: 0;
-    border-bottom: none;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .widget-curso_label {
@@ -226,7 +226,8 @@ img {
   font-weight: normal;
 }
 
-.widget-curso_label, .widget-curso_info {
+.widget-curso_label,
+.widget-curso_info {
   font-size: 2rem;
 }
 
@@ -247,7 +248,7 @@ img {
   column-gap: 2rem;
 }
 
-.Sobre-nosotros_tex{
+.Sobre-nosotros_tex {
   text-align: justify;
 }
 
@@ -279,7 +280,8 @@ img {
   font-weight: normal;
 }
 
-.curso_label, .curso_info {
+.curso_label,
+.curso_info {
   font-size: 2rem;
 }
 
@@ -288,7 +290,8 @@ img {
 }
 
 @media (max-width: 1270px) {
-  .curso_label, .curso_info {
+  .curso_label,
+  .curso_info {
     font-size: 1.6rem;
   }
   .curso_descripcion {
@@ -302,13 +305,101 @@ img {
     padding: 2rem 0;
   }
 
-  .curso_label, .curso_info {
+  .curso_label,
+  .curso_info {
     font-size: 2rem;
   }
 }
 
+/*Contacto*/
+.contacto-bg {
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem 5rem 2.5rem 5rem;
+}
+.campo {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.campo_label {
+  flex: 0 0 9rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.campo_field {
+  flex: 1;
+  border: 1px solid var(--segundo);
+  padding: 1rem;
+}
+
+.campo_field::placeholder {
+  color: transparent;
+}
+
+.campo_field--textarea {
+  height: 20rem;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+.boton-tercero {
+  background-color: var(--principal);
+}
+
+@media (max-width: 870px) {
+
+  .formulario {
+    padding: 2.5rem;
+  }
+  
+  .contacto-bg {
+    height: 20rem;
+  }
+
+  .campo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 1rem;
+  }
+  .campo_label {
+    display: none;
+    text-align: left;
+  }
+
+  .campo_field::placeholder {
+    color: var(--segundo);
+  }
+
+  .campo_field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid var(--segundo);
+    font-size: 1.7rem;
+  }
+
+  .campo_field--textarea {
+    height: 10rem;
+  }
+}
+
 /*Footer*/
-.pie_pagina{
+.pie_pagina {
   background-color: var(--negro);
   padding: 2rem 0;
   margin-top: 2rem;
@@ -318,6 +409,7 @@ img {
 }
 
 @media (max-width: 870px) {
+  
   .barra {
     text-align: center;
   }
