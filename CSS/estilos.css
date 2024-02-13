@@ -357,6 +357,7 @@ img {
 }
 .boton-tercero {
   background-color: var(--principal);
+  border: none;
 }
 
 @media (max-width: 870px) {
