@@ -178,10 +178,6 @@ img {
   justify-content: center;
 }
 
-.entrada_contenido p {
-  text-align: justify;
-}
-
 .boton {
   display: inline-block;
   font-family: var(--Fuente-Heading);
@@ -248,10 +244,6 @@ img {
   column-gap: 2rem;
 }
 
-.Sobre-nosotros_tex {
-  text-align: justify;
-}
-
 @media (max-width: 1200px) {
   .Sobre-nosotros {
     display: grid;
@@ -286,7 +278,7 @@ img {
 }
 
 .curso_descripcion {
-  text-align: justify;
+  margin: 0;
 }
 
 @media (max-width: 1270px) {
